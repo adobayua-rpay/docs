@@ -61,6 +61,16 @@
       "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
     },
     {
+      "group": "Getting Started",
+      "pages": [
+          "quickstart",
+          {
+              "group": "Nested Reference Pages",
+              "pages": ["nested-reference-page"]
+          }
+      ]
+  },
+    {
       "group": "Amazon Web Services",
       "pages": ["aws/installation", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
     },
