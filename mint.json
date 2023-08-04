@@ -65,8 +65,8 @@
       "pages": [
           "aws/installation",
           {
-              "group": "Nested Reference Pages",
-              "pages": ["nested-reference-page"]
+              "group": "Azure Apps Installation",
+              "pages": ["aws/loadbalancers"]
           }
       ]
   },
