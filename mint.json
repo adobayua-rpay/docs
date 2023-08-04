@@ -62,7 +62,7 @@
     },
     {
       "group": "Amazon Web Services",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+      "pages": ["aws/installation", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
     },
     {
       "group": "Azure",
