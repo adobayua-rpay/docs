@@ -36,17 +36,17 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Core Resources",
       "icon": "book-open-cover",
       "url": "https://mintlify.com/docs"
     },
     {
-      "name": "Community",
+      "name": "Products",
       "icon": "slack",
       "url": "https://mintlify.com/community"
     },
     {
-      "name": "Blog",
+      "name": "Changelog",
       "icon": "newspaper",
       "url": "https://mintlify.com/blog"
     }
