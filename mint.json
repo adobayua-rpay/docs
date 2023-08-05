@@ -83,13 +83,17 @@
       ]
     },
     {
-      "group": "Amazon Web Services",
+      "group": "Microsoft Azure",
       "pages": [
-        "aws/installation",
+        "azure/installation",
         {
           "group": "Azure Apps Installation",
           "pages": [
-            "aws/loadbalancers"
+            "azure/loadbalancers",
+            "azure/loadbalancers",
+            "azure/webapps",
+            "azure/storageaccounts"
+
           ]
         }
       ]
