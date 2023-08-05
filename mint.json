@@ -89,10 +89,12 @@
         {
           "group": "Azure Apps Installation",
           "pages": [
+            "azure/functionapp",
             "azure/loadbalancers",
-            "azure/loadbalancers",
+            "azure/virtualnetworks",
             "azure/webapps",
-            "azure/storageaccounts"
+            "azure/storageaccounts",
+            "azure/virtualmachine"
 
           ]
         }
