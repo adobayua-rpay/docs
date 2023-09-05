@@ -1,0 +1,48 @@
+---
+title: 'Install AWS On Panaptico'
+description: 'Display inline code and code blocks'
+icon: 'code'
+---
+
+## Sign In To AWS
+
+### Navigate To IAM Roles by using the search bar.
+
+Click On `Users` In `Access Management`
+
+Click On `Add Users`
+
+Enter In The User Name `Panaptico`
+
+Select `Attach Policies Directly`
+
+Click `Create Policy`
+
+Next To `Policy Editor` Click On JSON
+
+
+### Policy Block (Paste The Following Below)
+
+Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
+
+```install aws.json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "autoscaling-plans:*",
+                "cloudwatch:*",
+                "iam:*",
+                "iam:ListPolicies"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+
+

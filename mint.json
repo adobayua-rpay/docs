@@ -36,19 +36,14 @@
   ],
   "anchors": [
     {
-      "name": "Core Resources",
+      "name": "Our Website",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Products",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "url": "https://panaptico.com"
     },
     {
       "name": "Changelog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://panaptico.com"
     }
   ],
   "navigation": [
@@ -111,7 +106,7 @@
       ]
     },
     {
-      "group": "Google Cloud",
+      "group": "Vercel",
       "pages": [
         "essentials/markdown",
         "essentials/code",
@@ -122,36 +117,6 @@
     },
     {
       "group": "Github",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation"
-      ]
-    },
-    {
-      "group": "Cloudflare",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation"
-      ]
-    },
-    {
-      "group": "Databricks",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation"
-      ]
-    },
-    {
-      "group": "Snowflake",
       "pages": [
         "essentials/markdown",
         "essentials/code",
