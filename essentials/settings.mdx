@@ -1,6 +1,6 @@
 ---
-title: 'Global Settings'
-description: 'Mintlify gives you complete control over the look and feel of your documentation using the mint.json file'
+title: 'Github Installation'
+description: 'There are 2 ways to install Github on Panaptico, either through the Onboard screen or the Install Application Menu on the left hand side of navigation'
 icon: 'gear'
 ---
 
@@ -15,19 +15,83 @@ Example: `mintlify`
 
 </ResponseField>
 
-<ResponseField name="navigation" type="Navigation[]" required>
+<ResponseField name="Permission Fields We Take" type="Navigation[]" required>
   An array of groups with all the pages within that group
-  <Expandable title="Navigation">
-    <ResponseField name="group" type="string">
-    The name of the group.
+  <Expandable title="Permission Fields We Take">
+    <ResponseField name="Actions (Repository)" type="string">
+    Actions For Repository (Workflows, Workflow Runs & Artifacts)
 
-    Example: `Settings`
+    Access: `Read-only`
 
     </ResponseField>
-    <ResponseField name="pages" type="string[]">
-    The relative paths to the markdown files that will serve as pages.
+    <ResponseField name="Administration" type="string[]">
+    Settings, Teams & Collaborators
 
-    Example: `["customization", "page"]`
+    Access: `Read-only`
+
+    </ResponseField>
+
+        </ResponseField>
+    <ResponseField name="Checks" type="string[]">
+    Checks On Code
+
+    Access: `Read-only`
+
+    </ResponseField>
+    
+            </ResponseField>
+    <ResponseField name="Code Scanning Alerts" type="string[]">
+    List Codespaces
+    Access: `Read-only`
+
+    </ResponseField>
+
+                </ResponseField>
+    <ResponseField name="Codespace Lifecycle Admin" type="string[]">
+    Manage lifecycle of codespaces
+    Access: `Read-only`
+
+    </ResponseField>
+
+                    </ResponseField>
+    <ResponseField name="Commit Statuses" type="string[]">
+   View Commit Statuses
+    Access: `Read-only`
+
+    </ResponseField>
+
+                      </ResponseField>
+    <ResponseField name="Contents" type="string[]">
+   Repository contents, commits, branches, downloads, releases and merges
+    Access: `Read-only`
+
+    </ResponseField>
+
+                      </ResponseField>
+    <ResponseField name="Dependabot Alerts" type="string[]">
+   View Dependabot Alerts
+    Access: `Read-only`
+
+    </ResponseField>
+
+                          </ResponseField>
+    <ResponseField name="Deployments" type="string[]">
+   View Deployments and Deployment Statuses
+    Access: `Read-only`
+
+    </ResponseField>
+
+     </ResponseField>
+    <ResponseField name="Discussions" type="string[]">
+   View Discussions
+    Access: `Read-only`
+
+    </ResponseField>
+
+         </ResponseField>
+    <ResponseField name="Environments" type="string[]">
+   View Repository Environments
+    Access: `Read-only`
 
     </ResponseField>
 
