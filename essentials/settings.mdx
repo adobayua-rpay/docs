@@ -45,11 +45,46 @@ Example: `mintlify`
 
     </ResponseField>
 
-                <ResponseField name="Code Scanning Alerts" type="string[]">
-    Checks On Code
+    <ResponseField name="Code Scanning Alerts" type="string[]">
+    Checks On Code Scan Alerts
 
     Access: `["Read Only"]`
 
+    </ResponseField>
+
+        <ResponseField name="Codespaces" type="string[]">
+    Checks On Codespaces
+    Access: `["Read Only"]`
+    </ResponseField>
+
+    <ResponseField name="Codespaces lifecycle admin" type="string[]">
+    Manages Codespace Lifecycle Admin
+    Access: `["Read Only"]`
+    </ResponseField>
+
+    <ResponseField name="Codespaces metadata" type="string[]">
+    Manages Codespaces metadata including the devcontainers and machine type.
+    Access: `["Read Only"]`
+    </ResponseField>
+
+        <ResponseField name="Commit statuses" type="string[]">
+    Manages Commit statuses.
+    Access: `["Read Only"]`
+    </ResponseField>
+
+            <ResponseField name="Contents" type="string[]">
+    Manages Repository contents, commits, branches, downloads, releases, and merges.
+    Access: `["Read Only"]`
+    </ResponseField>
+
+                <ResponseField name="Dependabot alerts" type="string[]">
+    Manages Dependabot alerts.
+    Access: `["Read Only"]`
+    </ResponseField>
+
+                    <ResponseField name="Deployments" type="string[]">
+    Manages Deployments.
+    Access: `["Read Only"]`
     </ResponseField>
 
   </Expandable>
