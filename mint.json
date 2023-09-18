@@ -25,15 +25,9 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Sign In",
+    "url": "https://app.panaptico.com"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
       "name": "Our Website",
@@ -53,74 +47,18 @@
         "introduction"
       ]
     },
-    {
-      "group": "Amazon Web Services",
-      "pages": [
-        "aws/installation",
-        {
-          "group": "AWS Apps Installation",
-          "pages": [
-            "aws/loadbalancers"
-          ]
-        }
-      ]
-    },
-    {
-      "group": "Microsoft Azure",
-      "pages": [
-        "azure/installation",
-        {
-          "group": "Azure Apps Installation",
-          "pages": [
-            "azure/functionapp",
-            "azure/loadbalancers",
-            "azure/virtualnetworks",
-            "azure/webapps",
-            "azure/storageaccounts",
-            "azure/virtualmachine"
 
-          ]
-        }
-      ]
-    },
-    {
-      "group": "Amazon Web Services",
-      "pages": [
-        "aws/installation",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation"
-      ]
-    },
-    {
-      "group": "Azure",
-      "pages": [
-        "azure/installation",
-        "azure/loadbalancers",
-        "azure/webapps",
-        "azure/storageaccounts",
-        "essentials/navigation"
-      ]
-    },
+
     {
       "group": "Vercel",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation"
+        "Github/settings"
       ]
     },
     {
       "group": "Github",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation"
+        "Github/settings"
       ]
     },
     {
@@ -128,20 +66,11 @@
       "pages": [
         "api-reference/authentication"
       ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
-      ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/panaptico",
+    "github": "https://github.com/panaptico",
+    "linkedin": "https://www.linkedin.com/company/panaptico"
   }
 }
