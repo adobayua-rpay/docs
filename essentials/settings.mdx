@@ -19,23 +19,15 @@ Example: `mintlify`
   An array of groups with all the pages within that group
   <Expandable title="Permission Fields We Take">
     <ResponseField name="Actions (Repository)" type="string">
-    Actions For Repository (Workflows, Workflow Runs & Artifacts)
+    Actions For Repository
 
-    Access: `Read-only`
-
-    </ResponseField>
-    <ResponseField name="Administration" type="string[]">
-    Settings, Teams & Collaborators
-
-    Access: `Read-only`
+    Access: `Settings`
 
     </ResponseField>
+    <ResponseField name="pages" type="string[]">
+    The relative paths to the markdown files that will serve as pages.
 
-        </ResponseField>
-    <ResponseField name="Checks" type="string[]">
-    Checks On Code
-
-    Access: `Read-only`
+    Example: `["customization", "page"]`
 
     </ResponseField>
 
