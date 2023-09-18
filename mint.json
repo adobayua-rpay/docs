@@ -50,10 +50,7 @@
 
 
     {
-      "group": "Vercel",
-      "pages": [
-        "Github/settings"
-      ]
+      "group": "Vercel"
     },
     {
       "group": "Github",
