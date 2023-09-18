@@ -6,17 +6,12 @@ icon: 'gear'
 
 To use Github we use an authentication system which generates a token when you grant access to our app.
 Access tokens created by apps are automatically authorized for SAML SSO.
+Panaptico only uses read only privileges on your github account.
 ## Properties
 
-<ResponseField name="name" type="string" required>
-Name of your project. Used for the global title.
 
-Example: `mintlify`
-
-</ResponseField>
-
-<ResponseField name="Permission Fields We Take" type="Navigation[]" required>
-  An array of groups with all the pages within that group
+<ResponseField name="Permission Fields We Take (Repository Permissions)" type="Navigation[]" required>
+  Repository permissions permit access to repositories and related resources
   <Expandable title="Permission Fields We Take">
     <ResponseField name="Actions (Repository)" type="string">
     Actions For Repository
@@ -148,23 +143,115 @@ Example: `mintlify`
 
 
 
+<ResponseField name="Permission Fields We Take (Organization Permissions)" type="Navigation[]" required>
+  Organization permissions permit access to organization related resources
+  <Expandable title="Permission Fields We Take">
+    <ResponseField name="Administration" type="string">
+    Manages access to an organization
 
+    Access: `Read Only`
 
-
-
-
-<ResponseField name="topAnchor" type="Object">
-  Override the default configurations for the top-most anchor.
-  <Expandable title="Object">
-    <ResponseField name="name" default="Documentation" type="string">
-      The name of the top-most anchor
     </ResponseField>
-    <ResponseField name="icon" default="book-open" type="string">
-      Font Awesome icon.
+    <ResponseField name="Blocking Users" type="string[]">
+    Views users blocked by the organization
+
+    Example: `["Read Only"]`
+
     </ResponseField>
-    <ResponseField name="iconType" default="duotone" type="string">
-      One of: "brands", "duotone", "light", "sharp-solid", "solid", or "thin"
+
+        <ResponseField name="Custom Repository Roles" type="string[]">
+    Views custom repository roles
+
+    Access: `["Read Only"]`
+
     </ResponseField>
+
+            <ResponseField name="Events" type="string[]">
+    Manages events triggered by an activity in an organization
+
+    Access: `["Read Only"]`
+
+    </ResponseField>
+
+    <ResponseField name="Github Copilot For Business" type="string[]">
+    Manages copilot for Business seats and settings
+
+    Access: `["Read Only"]`
+
+    </ResponseField>
+
+        <ResponseField name="Members" type="string[]">
+    Views organization members and teams
+    Access: `["Read Only"]`
+    </ResponseField>
+
+    <ResponseField name="Organization Codespaces" type="string[]">
+    Views codespaces for an organization
+    Access: `["Read Only"]`
+    </ResponseField>
+
+    <ResponseField name=" Organization Codespaces Secrets" type="string[]">
+    Manages Codespaces secrets for an organization.
+    Access: `["Read Only"]`
+    </ResponseField>
+
+        <ResponseField name="Organization Codespaces Settings" type="string[]">
+   Manages codespaces settings for an organization
+    Access: `["Read Only"]`
+    </ResponseField>
+
+            <ResponseField name="Organization Dependabot Secrets" type="string[]">
+    Manages Dependabot organization secrets
+    Access: `["Read Only"]`
+    </ResponseField>
+
+                <ResponseField name="Personal Access Token Requests" type="string[]">
+    Views personal access token requests from an organization members
+    Access: `["Read Only"]`
+    </ResponseField>
+
+    <ResponseField name="Personal Access Tokens" type="string[]">
+   Views personal access tokens that have been granted access to an organization
+    Access: `["Read Only"]`
+    </ResponseField>
+
+        <ResponseField name="Plan" type="string[]">
+    Views an organization's plan
+    Access: `["Read Only"]`
+    </ResponseField>
+
+     <ResponseField name="Projects" type="string[]">
+    Manages projects for an organization
+    Access: `["Read Only"]`
+    </ResponseField>
+
+         <ResponseField name="Secrets" type="string[]">
+    Manages actions organizations secrets
+    Access: `["Read Only"]`
+    </ResponseField>
+
+             <ResponseField name="Self hosted runners" type="string[]">
+    Manages actions self-hosted runners available to an organization
+    Access: `["Read Only"]`
+    </ResponseField>
+
+                 <ResponseField name="Team Discussions" type="string[]">
+    Manages team discussions and related comments
+    Access: `["Read Only"]`
+    </ResponseField>
+
+                     <ResponseField name="Variables" type="string[]">
+    Manages Actions organization variables
+    Access: `["Read Only"]`
+    </ResponseField>
+
+                         <ResponseField name="Webhooks" type="string[]">
+    Manage the post-receive hooks for an organization
+    Access: `["Read Only"]`
+    </ResponseField>
+
+                             
+
   </Expandable>
 </ResponseField>
 
@@ -179,51 +266,11 @@ Example: `mintlify`
 
 
 
-<ResponseField name="feedback" type="Feedback">
-  Configurations to enable feedback buttons
 
-  <Expandable title="Feedback">
-    <ResponseField name="suggestEdit" type="boolean" default="false">
-    Enables a button to allow users to suggest edits via pull requests
-    </ResponseField>
-    <ResponseField name="raiseIssue" type="boolean" default="false">
-    Enables a button to allow users to raise an issue about the documentation
-    </ResponseField>
-  </Expandable>
-</ResponseField>
 
-<ResponseField name="modeToggle" type="ModeToggle">
-  Customize the dark mode toggle.
-  <Expandable title="ModeToggle">
-    <ResponseField name="default" type={'"light" or "dark"'}>
-      Set if you always want to show light or dark mode for new users. When not
-      set, we default to the same mode as the user's operating system.
-    </ResponseField>
-    <ResponseField name="isHidden" type="boolean" default="false">
-      Set to true to hide the dark/light mode toggle. You can combine `isHidden` with `default` to force your docs to only use light or dark mode. For example:
-      
-      <CodeGroup>
-      ```json Only Dark Mode
-      "modeToggle": {
-        "default": "dark",
-        "isHidden": true
-      }
-      ```
 
-      ```json Only Light Mode
-      "modeToggle": {
-        "default": "light",
-        "isHidden": true
-      }
-      ```
-      </CodeGroup>
 
-    </ResponseField>
 
-  </Expandable>
-</ResponseField>
 
-<ResponseField name="backgroundImage" type="string">
-  A background image to be displayed behind every page. See example with
-  [Infisical](https://infisical.com/docs) and [FRPC](https://frpc.io).
-</ResponseField>
+
+
